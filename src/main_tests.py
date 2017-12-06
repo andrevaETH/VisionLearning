@@ -8,5 +8,10 @@ def main():
     maxLen = 5
     print("Hello world " + str(maxLen))
 
+    i = 0
+    while(i < 5):
+        print("Sod it")
+        i += 1
+
 if __name__ == '__main__':
     main()
