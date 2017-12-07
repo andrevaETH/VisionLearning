@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Dec 6 2017 1:53 PM
+Created on Dec 7 2017 1:53 PM
 @author: andrevaETH
 """
 
@@ -32,13 +32,14 @@ class LinkedList:
     """
     Class for testing a LinkedList
     """
-    def __init__(self, first_value=None):
+    def __init__(self, first_value):
         """
         Constructor
         """
-        self.current_node = None
-        self.first_node = None
-        self.last_node = None
+        # - Otherwise add a node -
+        new_node = Node(first_value)
+        self.first_node = new_node
+        self.last_node = new_node
 
     def add_node_last(self, node_value):
         """

@@ -4,9 +4,9 @@ Created on Dec 6 2017 1:53 PM
 @author: andrevaETH
 """
 
-import LinkedList.linked_list
+import data_structures.linked_list as ll
 
-def base_operations:
+def base_operations():
     """
     Many test operations in python
     """
@@ -33,7 +33,13 @@ def base_operations:
     print("You are " + yourAge + " years old.")
 
 def main():
+    link_list = ll.LinkedList(3)
 
+    # - Add a value -
+    link_list.add_node_last(5)
+
+    # - Print value -
+    print(str(link_list.last_node.data))
 
 if __name__ == '__main__':
     main()
