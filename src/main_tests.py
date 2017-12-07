@@ -4,7 +4,11 @@ Created on Dec 6 2017 1:53 PM
 @author: andrevaETH
 """
 
-def main():
+import LinkedList.linked_list
+
+def base_operations:
+    """
+    Many test operations in python
     """
     maxLen = -1
     if(maxLen > 5):
@@ -24,9 +28,12 @@ def main():
 
     keyForDict = 'a'
     print(switchDict.get(keyForDict, 'default'))
-    """
+
     yourAge = input("Please enter your age: ")
     print("You are " + yourAge + " years old.")
+
+def main():
+
 
 if __name__ == '__main__':
     main()
