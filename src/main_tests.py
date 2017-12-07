@@ -5,6 +5,7 @@ Created on Dec 6 2017 1:53 PM
 """
 
 def main():
+    """
     maxLen = -1
     if(maxLen > 5):
         print("Hello world " + str(maxLen))
@@ -23,7 +24,9 @@ def main():
 
     keyForDict = 'a'
     print(switchDict.get(keyForDict, 'default'))
-    
+    """
+    yourAge = input("Please enter your age: ")
+    print("You are " + yourAge + " years old.")
 
 if __name__ == '__main__':
     main()
