@@ -16,17 +16,13 @@ class Node:
         self.next = next_node
         self.previous = previous_node
 
-    def update_previous_node(self, previous_node):
+    def update_node(self, next_node, previous_node):
         """
-        Change the pointer to previous_node
-        """
-        self.previous = previous_node
-
-    def update_next_node(self, next_node):
-        """
-        Change the pointer to next_node
+        Change the node pointers
         """
         self.next = next_node
+        self.previous = previous_node
+
 
 class LinkedList:
     """
@@ -47,7 +43,8 @@ class LinkedList:
         """
         new_node = Node(node_value, None, self.last_node)
 
-        # - Set last_node accordingly -
+        # - Update the Nodes -
+        self.last_node.update_node(new_node, self.last_node.previous)
         self.last_node = new_node
 
     def add_node_first(self, node_value):
@@ -57,4 +54,13 @@ class LinkedList:
         new_node = Node(node_value, self.first_node, None)
 
         # - Update head -
+        self.first_node.update_node(self.first_node.next, new_node)
         self.first_node = new_node
+
+    def clear(self):
+        """
+        Remove all Nodes from the list
+        """
+        current_node = self.first_node
+        while(current_node.next != None):
+            del current_node
