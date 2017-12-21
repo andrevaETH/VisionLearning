@@ -27,7 +27,7 @@ class NumberLinkedList(src.data_structures.linked_list.LinkedList):
         """
         return number_as_string[::-1]
 
-    def save_number(self, number_as_string, base):
+    def save_number(self, number_as_string):
         """
         Takes string and saves in a LinkedList
         """
@@ -55,9 +55,10 @@ class NumberLinkedList(src.data_structures.linked_list.LinkedList):
         Method to print number as string back to display
         """
         current_node = self.first_node
+        result_number = ""
         while(current_node != None):
 
-            result_number = result_number.append(str(current_node.data['value']))
+            result_number += str(current_node.data['value'])
 
             current_node = current_node.next
-        print self.reverse_string(result_number)
+        print(self.reverse_string(result_number))

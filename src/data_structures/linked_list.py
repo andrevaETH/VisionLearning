@@ -45,7 +45,7 @@ class LinkedList(object):
         """
         Creates the head if not yet done
         """
-        new_node = Node(first_value)
+        new_node = Node(head_value)
         self.first_node = new_node
         self.last_node = new_node
 

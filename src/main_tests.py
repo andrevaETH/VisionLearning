@@ -5,6 +5,7 @@ Created on Dec 6 2017 1:53 PM
 """
 
 import data_structures.linked_list as ll
+import data_structures.ll_numbers as nll
 
 def base_operations():
     """
@@ -34,6 +35,15 @@ def base_operations():
 
 def main():
     link_list = ll.LinkedList(3)
+
+    # - Make a linked list for a very large number -
+    # - Rather pointless in python as seen by the comparison -
+    a = "73928792834792837497842978080123801931083098"
+    n_link_list = nll.NumberLinkedList(a)
+    n_link_list.print_number()
+
+    b = int(73928792834792837497842978080123801931083098)
+    print("Ordinary way to store number ", str(b))
 
     # - Add a value -
     link_list.add_node_last(5)
