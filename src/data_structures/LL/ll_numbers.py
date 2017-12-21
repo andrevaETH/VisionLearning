@@ -3,7 +3,7 @@
 Created on Dec 20 2017 1:53 PM
 @author: andrevaETH
 """
-import src.data_structures.linked_list
+import src.data_structures.LL.linked_list
 
 class NumberLinkedList(src.data_structures.linked_list.LinkedList):
     """

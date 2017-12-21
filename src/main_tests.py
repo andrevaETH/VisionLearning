@@ -4,8 +4,8 @@ Created on Dec 6 2017 1:53 PM
 @author: andrevaETH
 """
 
-import data_structures.linked_list as ll
-import data_structures.ll_numbers as nll
+import data_structures.LL.linked_list as ll
+import data_structures.LL.ll_numbers as nll
 
 def base_operations():
     """
